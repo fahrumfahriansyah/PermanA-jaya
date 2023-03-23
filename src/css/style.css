@@ -1,0 +1,48 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
+  .container {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .Navbar_Container {
+    background-color: transparent;
+    margin-top: -6px;
+    font-family: Montserrat;
+    font-size: 14px;
+
+  }
+
+  .Navbar_Container a {
+    color: #212529;
+    transition: 0.5s;
+    font-weight: 600;
+  }
+
+  .Navbar_Container a:hover {
+    color: #212529;
+    transform: scale(0.8);
+  }
+
+  .Contain {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .Logo {
+    background-image: url("../images/PermanaJaya.jpg");
+    background-size: cover;
+    width: 80px;
+    height: 60px;
+    border-radius: 0px 15px 0px 15px;
+  }
+
+  .Cards p {
+    font-size: 14px;
+  }
+
+  .Cards p:nth-child(odd) {
+    text-align: end;
+  }
+
+  .Cards:nth-last-child(even) {
+    text-align: start;
+  }
