@@ -1,14 +1,45 @@
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;1,300&display=swap');
+
+
+
+  h1,
+  h2,
+  h4,
+  h3,
+  h5 {
+    font-family: Raleway;
+  }
+
+  .FontralewayP {
+    font-family: Raleway;
+    font-weight: bold;
+  }
 
   .container {
     font-family: Arial, Helvetica, sans-serif;
   }
 
+  .NavbarPermana {
+    background-image: linear-gradient(to right, rgb(241, 241, 241), rgb(159, 160, 159));
+  }
+
   .Navbar_Container {
-    background-color: transparent;
+    background-image: linear-gradient(rgb(241, 241, 241), rgb(159, 160, 159));
     margin-top: -6px;
     font-family: Montserrat;
     font-size: 14px;
+  }
+
+  .NavbarPermana hr {
+    width: 80%;
+    animation: hrTwo 10s linear infinite;
+  }
+
+  .NavbarPermana hr:nth-last-child(1) {
+    width: 50%;
+    animation: hrOne 10s linear infinite;
 
   }
 
@@ -26,6 +57,8 @@
   .Contain {
     font-family: Arial, Helvetica, sans-serif;
   }
+
+
 
   .Logo {
     background-image: url("../images/PermanaJaya.jpg");
@@ -45,4 +78,118 @@
 
   .Cards:nth-last-child(even) {
     text-align: start;
+  }
+
+  .Proses:hover .IconProses svg {
+    animation: spin 1s linear infinite;
+  }
+
+  .Alarm:hover .iconAlarm svg {
+    animation: Alarm 1s linear infinite;
+  }
+
+  .Car:hover .IconCar svg {
+    animation: Car 0.4s linear;
+  }
+
+  .Money:hover .IconMoney svg {
+    animation: Money 0.4s linear;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes Alarm {
+    10% {
+      transform: rotate(30deg);
+      margin-top: -20px;
+    }
+
+    20% {
+      transform: rotate(-30deg);
+      margin-top: -30px;
+    }
+
+    40% {
+      transform: rotate(30deg);
+    }
+
+    50% {
+      transform: rotate(-30deg);
+    }
+
+    60% {
+      transform: rotate(30deg);
+    }
+
+    70% {
+      transform: rotate(-30deg);
+    }
+
+    80% {
+      transform: rotate(30deg);
+    }
+
+    90% {
+      transform: rotate(-30deg);
+    }
+
+    100% {
+      transform: rotate(30deg);
+    }
+
+    90% {
+      transform: rotate(-30deg);
+    }
+  }
+
+  @keyframes Car {
+    from {
+      transform: translateX(-100px);
+    }
+
+  }
+
+  @keyframes Money {
+    from {
+      transform: translateY(-100px);
+    }
+
+  }
+
+  @keyframes hrOne {
+    0% {
+      width: 100%;
+    }
+
+    50% {
+      width: 0%;
+    }
+
+    100% {
+      width: 100%;
+    }
+
+  }
+
+  @keyframes hrTwo {
+    0% {
+      width: 0%;
+    }
+
+    50% {
+      width: 100%;
+    }
+
+    100% {
+      width: 0%;
+    }
+
   }
