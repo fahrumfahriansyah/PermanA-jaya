@@ -32,12 +32,12 @@
     font-size: 14px;
   }
 
-  .NavbarPermana hr {
+  .hr hr {
     width: 80%;
     animation: hrTwo 10s linear infinite;
   }
 
-  .NavbarPermana hr:nth-last-child(1) {
+  .hr hr:nth-last-child(1) {
     width: 50%;
     animation: hrOne 10s linear infinite;
 
